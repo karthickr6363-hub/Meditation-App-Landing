@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | ZenMind</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        zenGreen: '#2D5A27',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-softCream dark:bg-slate-900 transition-colors duration-200">
+
+    <main>
+        <section class="py-20 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold dark:text-white mb-6">Mindfulness Resources</h1>
+            <p class="text-xl text-slate-700 dark:text-slate-300 max-w-2xl mx-auto font-medium">Free guides, articles,
+                and videos to help you stay mindful.</p>
+        </section>
+
+        <section class="py-12 px-4 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Resource 1 -->
+                <div class="card-premium group cursor-pointer hover-lift">
+                    <img src="https://via.placeholder.com/400x250.png?text=Meditation+Tips"
+                        class="rounded-xl mb-6 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold mb-3 dark:text-white group-hover:text-zenGreen transition-colors">5
+                        Tips for Better Meditation</h3>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6 text-sm">Learn how to set up your space and mind
+                        for a successful daily practice.</p>
+                    <a href="#" class="text-zenGreen font-bold text-sm">Read Article →</a>
+                </div>
+                <!-- Resource 2 -->
+                <div class="card-premium group cursor-pointer hover-lift">
+                    <img src="https://via.placeholder.com/400x250.png?text=Breathing+Guide"
+                        class="rounded-xl mb-6 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold mb-3 dark:text-white group-hover:text-zenGreen transition-colors">The
+                        Box Breathing Guide</h3>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6 text-sm">Downloadable PDF guide to one of the most
+                        effective stress-relief techniques.</p>
+                    <a href="#" class="text-zenGreen font-bold text-sm">Download PDF →</a>
+                </div>
+                <!-- Resource 3 -->
+                <div class="card-premium group cursor-pointer hover-lift">
+                    <img src="https://via.placeholder.com/400x250.png?text=Mindfulness+Video"
+                        class="rounded-xl mb-6 w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold mb-3 dark:text-white group-hover:text-zenGreen transition-colors">
+                        10-Minute Morning Flow</h3>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6 text-sm">Watch our guided morning flow video to
+                        start your day with intention.</p>
+                    <a href="#" class="text-zenGreen font-bold text-sm">Watch Video →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/components.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard | ZenMind</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        zenGreen: '#2D5A27',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-900 transition-colors duration-200">
+
+    <div class="flex min-h-screen">
+        <!-- Dashboard Sidebar (Requirement 11, 49) -->
+        <aside id="dash-sidebar"
+            class="fixed inset-y-0 left-0 z-50 w-64 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out">
+            <div class="p-6">
+                <a href="index.html" class="flex items-center gap-2 mb-10">
+                    <div class="w-8 h-8 bg-zenGreen rounded flex items-center justify-center text-white font-bold">M
+                    </div>
+                    <span class="brand-name brand-font text-green-800 dark:text-green-400"
+                        style="font-size: 1.25rem">ZenMind</span>
+                </a>
+
+                <nav class="space-y-1">
+                    <a href="user-dashboard.html"
+                        class="flex items-center gap-3 px-4 py-3 rounded-lg active-nav-item font-bold">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                            </path>
+                        </svg>
+                        Dashboard
+                    </a>
+                    <a href="#"
+                        class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
+                            </path>
+                            <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Library
+                    </a>
+                    <a href="#"
+                        class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                            </path>
+                        </svg>
+                        Analytics
+                    </a>
+                    <a href="#"
+                        class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4">
+                            </path>
+                        </svg>
+                        Settings
+                    </a>
+                </nav>
+
+                <div class="absolute bottom-8 left-6 right-6">
+                    <a href="index.html"
+                        class="flex items-center gap-3 px-4 py-3 rounded-lg text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors font-bold">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                            </path>
+                        </svg>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-grow lg:ml-64 p-4 lg:p-8">
+            <!-- Top Bar -->
+            <div class="flex items-center justify-between mb-8">
+                <div class="flex items-center gap-4">
+                    <button id="sidebar-toggle" class="lg:hidden p-2 bg-white dark:bg-slate-800 rounded-lg shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <h1 class="text-2xl font-bold dark:text-white">Good evening, Alex</h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <!-- Filter Icon (Requirement 49) -->
+                    <button
+                        class="p-2 bg-white dark:bg-slate-800 rounded-lg shadow-sm hover:text-zenGreen transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="w-10 h-10 bg-zenGreen rounded-full flex items-center justify-center text-white font-bold">
+                        A</div>
+                </div>
+            </div>
+
+            <!-- Dashboard Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="card-premium bg-white dark:bg-slate-800 p-6 flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center text-zenGreen">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500">Practice Minutes</p>
+                        <p class="text-2xl font-black dark:text-white">1,240</p>
+                    </div>
+                </div>
+                <div class="card-premium bg-white dark:bg-slate-800 p-6 flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-blue-600">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500">Current Streak</p>
+                        <p class="text-2xl font-black dark:text-white">12 Days</p>
+                    </div>
+                </div>
+                <div class="card-premium bg-white dark:bg-slate-800 p-6 flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center text-purple-600">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500">Wellness Score</p>
+                        <p class="text-2xl font-black dark:text-white">88%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommended Content -->
+            <h2 class="text-xl font-bold mb-6 dark:text-white">Recommended for Your Evening</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Session 1 -->
+                <div class="card-premium p-4 group cursor-pointer hover-lift">
+                    <div class="relative rounded-lg overflow-hidden mb-4 aspect-video bg-slate-200">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
+                            <svg class="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168l4.2 2.8a1 1 0 010 1.664l-4.2 2.8A1 1 0 018 13.593V7.707a1 1 0 011.555-.832z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-xs font-bold text-zenGreen mb-1 tracking-wider">SLEEP</p>
+                    <h3 class="font-bold mb-1 dark:text-white">Forest Moonlight</h3>
+                    <p class="text-xs text-slate-500">15 mins • Story</p>
+                </div>
+                <!-- Session 2 -->
+                <div class="card-premium p-4 group cursor-pointer hover-lift">
+                    <div class="relative rounded-lg overflow-hidden mb-4 aspect-video bg-slate-200">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
+                            <svg class="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168l4.2 2.8a1 1 0 010 1.664l-4.2 2.8A1 1 0 018 13.593V7.707a1 1 0 011.555-.832z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-xs font-bold text-blue-500 mb-1 tracking-wider">CALM</p>
+                    <h3 class="font-bold mb-1 dark:text-white">Anxiety Release</h3>
+                    <p class="text-xs text-slate-500">10 mins • Meditation</p>
+                </div>
+                <!-- Session 3 -->
+                <div class="card-premium p-4 group cursor-pointer hover-lift">
+                    <div class="relative rounded-lg overflow-hidden mb-4 aspect-video bg-slate-200">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
+                            <svg class="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168l4.2 2.8a1 1 0 010 1.664l-4.2 2.8A1 1 0 018 13.593V7.707a1 1 0 011.555-.832z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-xs font-bold text-orange-500 mb-1 tracking-wider">FOCUS</p>
+                    <h3 class="font-bold mb-1 dark:text-white">Mindful Morning</h3>
+                    <p class="text-xs text-slate-500">5 mins • Breathing</p>
+                </div>
+                <!-- Session 4 -->
+                <div class="card-premium p-4 group cursor-pointer hover-lift">
+                    <div class="relative rounded-lg overflow-hidden mb-4 aspect-video bg-slate-200">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
+                            <svg class="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168l4.2 2.8a1 1 0 010 1.664l-4.2 2.8A1 1 0 018 13.593V7.707a1 1 0 011.555-.832z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-xs font-bold text-zenGreen mb-1 tracking-wider">SLEEP</p>
+                    <h3 class="font-bold mb-1 dark:text-white">Starry Ocean</h3>
+                    <p class="text-xs text-slate-500">20 mins • Music</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Mobile Sidebar Toggle
+        const sidebar = document.getElementById('dash-sidebar');
+        const toggle = document.getElementById('sidebar-toggle');
+
+        toggle.addEventListener('click', () => {
+            sidebar.classList.toggle('-translate-x-full');
+        });
+
+        // Close sidebar on click outside (mobile)
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth < 1024 && !sidebar.contains(e.target) && !toggle.contains(e.target)) {
+                sidebar.classList.add('-translate-x-full');
+            }
+        });
+    </script>
+</body>
+
+</html>

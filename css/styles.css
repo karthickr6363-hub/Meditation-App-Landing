@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+
+:root {
+    --brand-primary: #2D5A27; /* Zen Green */
+    --brand-secondary: #A5C9CA; /* Sky Blue */
+    --brand-accent: #E7AB79; /* Soft Peach/Orange */
+    --bg-light: #F9F5EB; /* Soft Cream */
+    --bg-dark: #1E293B; /* Deep Charcoal */
+    --card-light: #FFFFFF;
+    --card-dark: #334155;
+    --text-primary-light: #1E293B;
+    --text-secondary-light: #64748B;
+    --text-primary-dark: #F8FAFC;
+    --text-secondary-dark: #CBD5E1;
+    
+    /* Consistency tokens */
+    --nav-height-desktop: 80px;
+    --nav-height-mobile: 64px;
+    --btn-height: 48px;
+    --btn-radius: 8px;
+    --transition-fast: 0.2s ease-in-out;
+}
+
+/* Dark/Light Mode Utilities */
+html.dark {
+    background-color: var(--bg-dark);
+    color: var(--text-primary-dark);
+}
+
+html.light {
+    background-color: var(--bg-light);
+    color: var(--text-primary-light);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+h1, h2, h3, h4, .brand-font {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+
+/* Requirement: Brand name font consistency */
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--brand-primary);
+}
+
+/* Requirement: Button height consistency */
+.btn-consistent {
+    height: var(--btn-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    border-radius: var(--btn-radius);
+    transition: all var(--transition-fast);
+    font-weight: 600;
+}
+
+/* Requirement: Card contrast */
+.card-premium {
+    background-color: var(--card-light);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.dark .card-premium {
+    background-color: var(--card-dark);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Animations */
+.hover-lift {
+    transition: transform var(--transition-fast);
+}
+.hover-lift:hover {
+    transform: translateY(-4px);
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 15px rgba(45, 90, 39, 0.4);
+}
+
+/* Requirement: Scrollbar fix */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: inherit;
+}
+
+/* Requirement: Center H1 and spacing */
+.hero-title-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+/* Requirement: CTA alignment in cards */
+.card-grid-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.card-cta-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Requirement: Footer link visibility */
+.footer-link:hover {
+    color: var(--brand-secondary) !important;
+}
+
+/* Dashboard Sidebar */
+.dashboard-sidebar {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.active-nav-item {
+    background-color: rgba(45, 90, 39, 0.1);
+    color: var(--brand-primary);
+    border-left: 4px solid var(--brand-primary);
+}

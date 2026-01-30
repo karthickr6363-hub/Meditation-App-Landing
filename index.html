@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenMind | Find Your Inner Peace</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        zenGreen: '#2D5A27',
+                        skyBlue: '#A5C9CA',
+                        softCream: '#F9F5EB',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="bg-softCream dark:bg-slate-900 transition-colors duration-200">
+
+    <!-- Header and Footer are injected by components.js -->
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="img/hero-bg.png" alt="Peaceful landscape" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-white/60 dark:bg-slate-900/70 backdrop-blur-[2px]"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="relative z-10 max-w-4xl px-4 text-center hero-title-container animate__animated animate__fadeIn">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
+                    Find Your Inner Peace
+                </h1>
+                <p class="text-lg md:text-xl text-slate-700 dark:text-slate-300 mb-10 max-w-2xl mx-auto font-medium">
+                    Calm your mind, sleep better, and live mindfully with ZenMind's guided journeys.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="download.html" class="btn-consistent bg-zenGreen text-white px-8 py-3 rounded-full hover:bg-green-800 hover-lift hover-glow text-lg">
+                        Download App
+                    </a>
+                    <a href="signup.html" class="btn-consistent border-2 border-zenGreen text-zenGreen dark:text-green-400 dark:border-green-400 px-8 py-3 rounded-full hover:bg-zenGreen/10 hover-lift text-lg">
+                        Join Free
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Preview Section -->
+        <section class="py-20 px-4 bg-white dark:bg-slate-800">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 dark:text-white">Experience Zen Anywhere</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                    <div class="w-full max-w-xs hover-lift animate__animated animate__fadeInLeft">
+                        <img src="https://via.placeholder.com/300x600.png?text=ZenMind+App+iOS" alt="iOS Mockup" class="rounded-[3rem] shadow-2xl border-8 border-slate-900">
+                        <p class="mt-4 font-semibold dark:text-white">App Store</p>
+                    </div>
+                    <div class="hidden lg:block w-px h-64 bg-slate-200 dark:bg-slate-700"></div>
+                    <div class="w-full max-w-xs hover-lift animate__animated animate__fadeInRight">
+                        <img src="https://via.placeholder.com/300x600.png?text=ZenMind+App+Android" alt="Android Mockup" class="rounded-[3rem] shadow-2xl border-8 border-slate-900">
+                        <p class="mt-4 font-semibold dark:text-white">Google Play</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Signals -->
+        <section class="py-12 bg-slate-50 dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center items-center">
+                    <div>
+                        <div class="text-3xl font-bold text-zenGreen">10M+</div>
+                        <div class="text-sm text-slate-600 dark:text-slate-400 font-semibold mt-1 uppercase tracking-wider">Active Users</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-zenGreen">4.9/5</div>
+                        <div class="text-sm text-slate-600 dark:text-slate-400 font-semibold mt-1 uppercase tracking-wider">App Rating</div>
+                    </div>
+                    <div class="flex justify-center flex-col items-center">
+                        <div class="flex gap-1 text-yellow-500 mb-1">
+                            ★★★★★
+                        </div>
+                        <div class="text-sm text-slate-600 dark:text-slate-400 font-semibold uppercase tracking-wider">Top Rated 2024</div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <span class="text-2xl font-serif italic text-slate-400">Mindful Times</span>
+                         <span class="text-xs text-slate-500 uppercase">Featured Press</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Benefits -->
+        <section class="py-24 px-4 bg-softCream dark:bg-slate-800">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4 dark:text-white">Designed for Your Well-being</h2>
+                    <p class="text-slate-700 dark:text-slate-300 max-w-2xl mx-auto font-medium">Simple tools to help you navigate life's challenges with ease.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 card-grid-container">
+                    <!-- Benefit 1 -->
+                    <div class="card-premium flex flex-col items-center text-center group">
+                        <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 dark:text-white">Better Sleep</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 font-medium">Drift off into a restful night with our soothing sleep stories and soundscapes.</p>
+                        <div class="card-cta-wrapper">
+                            <a href="features.html" class="text-zenGreen font-bold hover:underline">Explore Sleep →</a>
+                        </div>
+                    </div>
+                    <!-- Benefit 2 -->
+                    <div class="card-premium flex flex-col items-center text-center group">
+                        <div class="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-2xl flex items-center justify-center text-zenGreen mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M16.242 16.242l.707.707M7.657 7.657l.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 dark:text-white">Pure Focus</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 font-medium">Clear away the digital clutter and focus on what truly matters to you today.</p>
+                        <div class="card-cta-wrapper">
+                            <a href="features.html" class="text-zenGreen font-bold hover:underline">Explore Focus →</a>
+                        </div>
+                    </div>
+                    <!-- Benefit 3 -->
+                    <div class="card-premium flex flex-col items-center text-center group">
+                        <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-2xl flex items-center justify-center text-orange-600 mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 dark:text-white">Stress Relief</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 font-medium">Quick breathing exercises and meditations to calm your nervous system in minutes.</p>
+                        <div class="card-cta-wrapper">
+                            <a href="features.html" class="text-zenGreen font-bold hover:underline">Explore Relief →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Banner -->
+        <section class="py-24 px-4 bg-zenGreen text-white text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Start Your Journey?</h2>
+                <p class="text-xl mb-10 text-green-100 opacity-90">Join millions of others who have found their center with ZenMind.</p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="download.html" class="btn-consistent bg-white text-zenGreen hover:bg-green-50 hover-lift text-lg px-10">Get the App</a>
+                    <a href="signup.html" class="btn-consistent border-2 border-white text-white hover:bg-white/10 hover-lift text-lg px-10">Try for Free</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared Components Loader -->
+    <script src="js/components.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

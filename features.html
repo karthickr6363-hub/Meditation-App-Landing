@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | ZenMind Meditation App</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        zenGreen: '#2D5A27',
+                        skyBlue: '#A5C9CA',
+                        softCream: '#F9F5EB',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-softCream dark:bg-slate-900 transition-colors duration-200">
+
+    <main>
+        <!-- Features Hero -->
+        <section class="relative py-20 bg-skyBlue/20 dark:bg-slate-800/50">
+            <div class="absolute inset-0 z-0 opacity-40">
+                <img src="img/features-hero-bg.png" alt="Abstract background" class="w-full h-full object-cover">
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">Powerful Features for a
+                    Clearer Mind</h1>
+                <p class="text-xl text-slate-700 dark:text-slate-300 max-w-2xl mx-auto font-medium">Explore the tools
+                    that will help you build a sustainable mindfulness practice.</p>
+            </div>
+        </section>
+
+        <!-- Main Features Grid (Requirement 25: Balanced Rows) -->
+        <section class="py-24 px-4 bg-white dark:bg-slate-900">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="card-premium h-full flex flex-col group hover-lift">
+                        <div class="text-zenGreen mb-6"><svg class="w-12 h-12" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg></div>
+                        <h3 class="text-2xl font-bold mb-3 dark:text-white">Guided Meditations</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow font-medium leading-relaxed">
+                            Hundreds of sessions ranging from 3 to 60 minutes, led by world-class mindfulness experts.
+                        </p>
+                        <div class="card-cta-wrapper">
+                            <a href="programs.html" class="btn-consistent bg-zenGreen text-white w-full">View
+                                Programs</a>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="card-premium h-full flex flex-col group hover-lift">
+                        <div class="text-blue-500 mb-6"><svg class="w-12 h-12" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                                </path>
+                            </svg></div>
+                        <h3 class="text-2xl font-bold mb-3 dark:text-white">Sleep Stories</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow font-medium leading-relaxed">
+                            Immersive audio journeys designed to help you drift off into a deep, natural sleep.
+                        </p>
+                        <div class="card-cta-wrapper">
+                            <a href="programs.html" class="btn-consistent bg-blue-600 text-white w-full">Listen Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="card-premium h-full flex flex-col group hover-lift">
+                        <div class="text-orange-500 mb-6"><svg class="w-12 h-12" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M16.242 16.242l.707.707M7.657 7.657l.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                                </path>
+                            </svg></div>
+                        <h3 class="text-2xl font-bold mb-3 dark:text-white">Breathing Exercises</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow font-medium leading-relaxed">
+                            Science-based breathing techniques to calm your nervous system and reduce anxiety instantly.
+                        </p>
+                        <div class="card-cta-wrapper">
+                            <a href="download.html" class="btn-consistent bg-orange-600 text-white w-full">Start
+                                Session</a>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="card-premium h-full flex flex-col group hover-lift">
+                        <div class="text-purple-500 mb-6"><svg class="w-12 h-12" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                </path>
+                            </svg></div>
+                        <h3 class="text-2xl font-bold mb-3 dark:text-white">Mood Tracker</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow font-medium leading-relaxed">
+                            Log your daily emotions and see how your meditation practice affects your mental well-being
+                            over time.
+                        </p>
+                        <div class="card-cta-wrapper">
+                            <a href="user-dashboard.html" class="btn-consistent bg-purple-600 text-white w-full">Track
+                                Progress</a>
+                        </div>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="card-premium h-full flex flex-col group hover-lift">
+                        <div class="text-yellow-500 mb-6"><svg class="w-12 h-12" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                                </path>
+                            </svg></div>
+                        <h3 class="text-2xl font-bold mb-3 dark:text-white">Daily Reminders</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow font-medium leading-relaxed">
+                            Customizable notifications to help you stay consistent with your practice throughout the
+                            day.
+                        </p>
+                        <div class="card-cta-wrapper">
+                            <a href="download.html" class="btn-consistent bg-yellow-600 text-white w-full">Set
+                                Reminders</a>
+                        </div>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="card-premium h-full flex flex-col group hover-lift">
+                        <div class="text-gray-500 mb-6"><svg class="w-12 h-12" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg></div>
+                        <h3 class="text-2xl font-bold mb-3 dark:text-white">Offline Downloads</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow font-medium leading-relaxed">
+                            Download your favorite sessions and listen anywhere—even without an internet connection.
+                        </p>
+                        <div class="card-cta-wrapper">
+                            <a href="pricing.html" class="btn-consistent bg-slate-700 text-white w-full">Go Premium</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AIC Recommender Section -->
+        <section class="py-24 px-4 bg-softCream dark:bg-slate-800 border-t border-slate-100 dark:border-slate-700">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <div
+                        class="inline-block px-4 py-1 bg-zenGreen/10 text-zenGreen rounded-full text-sm font-bold mb-6">
+                        PERSONALIZATION ENGINE</div>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6 dark:text-white">AI-Powered Journey</h2>
+                    <p class="text-lg text-slate-700 dark:text-slate-300 mb-8 font-medium leading-relaxed">
+                        Our intelligent recommendation engine learns from your preferences, mood logs, and time of day
+                        to suggest the perfect meditation exactly when you need it.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 font-medium dark:text-slate-200">
+                            <svg class="w-6 h-6 text-zenGreen" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Adaptive session lengths based on your schedule
+                        </li>
+                        <li class="flex items-center gap-3 font-medium dark:text-slate-200">
+                            <svg class="w-6 h-6 text-zenGreen" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Content curation tailored to your stress levels
+                        </li>
+                        <li class="flex items-center gap-3 font-medium dark:text-slate-200">
+                            <svg class="w-6 h-6 text-zenGreen" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Daily insights into your mindfulness progress
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 relative group">
+                    <div
+                        class="absolute -inset-4 bg-zenGreen/20 rounded-[2rem] blur-xl opacity-50 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <img src="https://via.placeholder.com/500x400.png?text=AI+Recommendations+UI" alt="AI Dashboard"
+                        class="relative rounded-[2rem] shadow-2xl border-4 border-white dark:border-slate-700">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/components.js"></script>
+</body>
+
+</html>

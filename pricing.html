@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans | ZenMind Meditation App</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        zenGreen: '#2D5A27',
+                        softCream: '#F9F5EB',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-softCream dark:bg-slate-900 transition-colors duration-200">
+
+    <main>
+        <section class="py-20 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">Choose Your Peace of Mind
+            </h1>
+            <p class="text-xl text-slate-700 dark:text-slate-300 max-w-2xl mx-auto font-medium mb-12">Flexible plans to
+                fit your journey. No commitments, cancel anytime.</p>
+
+            <!-- Toggle for Annual/Monthly (Conceptual) -->
+            <div class="flex items-center justify-center gap-4 mb-16">
+                <span class="font-bold dark:text-white">Monthly</span>
+                <button class="w-14 h-8 bg-zenGreen rounded-full relative p-1 transition-all">
+                    <div class="w-6 h-6 bg-white rounded-full translate-x-6"></div>
+                </button>
+                <span class="font-bold dark:text-white">Annual <span class="text-zenGreen text-sm">(Save
+                        20%)</span></span>
+            </div>
+
+            <!-- Pricing Grid -->
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Free Plan -->
+                <div
+                    class="card-premium h-full flex flex-col border-2 border-transparent hover:border-zenGreen transition-all">
+                    <h3 class="text-xl font-bold dark:text-white mb-2">Free Plan</h3>
+                    <div class="text-4xl font-black mb-6 dark:text-white">$0 <span
+                            class="text-lg font-normal text-slate-500">/mo</span></div>
+                    <ul class="text-left space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-zenGreen" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Basic Meditations</li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-zenGreen" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Mood Tracker</li>
+                        <li class="flex items-center gap-2 text-slate-400 dark:text-slate-600"><svg class="w-5 h-5"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Sleep Stories</li>
+                    </ul>
+                    <div class="card-cta-wrapper pt-6">
+                        <a href="signup.html"
+                            class="btn-consistent border-2 border-zenGreen text-zenGreen w-full hover:bg-zenGreen hover:text-white">Get
+                            Started</a>
+                    </div>
+                </div>
+
+                <!-- Annual Premium (Highlighted) -->
+                <div
+                    class="card-premium h-full flex flex-col border-2 border-zenGreen transform scale-105 shadow-2xl relative z-10 bg-white dark:bg-slate-800">
+                    <div
+                        class="absolute top-0 right-8 -translate-y-1/2 bg-zenGreen text-white px-4 py-1 rounded-full text-xs font-bold">
+                        BEST VALUE</div>
+                    <h3 class="text-xl font-bold dark:text-white mb-2">Annual Premium</h3>
+                    <div class="text-4xl font-black mb-6 dark:text-white">$9.99 <span
+                            class="text-lg font-normal text-slate-500">/mo</span></div>
+                    <ul class="text-left space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-2 font-bold dark:text-white"><svg class="w-5 h-5 text-zenGreen"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Unlimited Everything</li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-zenGreen" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> AI Personalized Journeys</li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-zenGreen" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Offline Downloads</li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-zenGreen" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Family Sharing (Up to 2)</li>
+                    </ul>
+                    <div class="card-cta-wrapper pt-6">
+                        <a href="signup.html"
+                            class="btn-consistent bg-zenGreen text-white w-full hover:bg-green-800 hover-lift">Start
+                            Free Trial</a>
+                    </div>
+                </div>
+
+                <!-- Monthly Premium -->
+                <div
+                    class="card-premium h-full flex flex-col border-2 border-transparent hover:border-zenGreen transition-all">
+                    <h3 class="text-xl font-bold dark:text-white mb-2">Monthly Premium</h3>
+                    <div class="text-4xl font-black mb-6 dark:text-white">$14.99 <span
+                            class="text-lg font-normal text-slate-500">/mo</span></div>
+                    <ul class="text-left space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-zenGreen" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> All Premium Sessions</li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-zenGreen" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Sleep & Focus Tools</li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-zenGreen" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Ad-Free Experience</li>
+                    </ul>
+                    <div class="card-cta-wrapper pt-6">
+                        <a href="signup.html"
+                            class="btn-consistent bg-slate-800 text-white w-full hover:bg-slate-900">Choose Monthly</a>
+                    </div>
+                </div>
+
+                <!-- Family Plan (Second Row) -->
+                <div
+                    class="card-premium h-full flex flex-col border-2 border-transparent hover:border-zenGreen transition-all lg:col-start-1">
+                    <h3 class="text-xl font-bold dark:text-white mb-2">Family Plan</h3>
+                    <div class="text-4xl font-black mb-6 dark:text-white">$19.99 <span
+                            class="text-lg font-normal text-slate-500">/mo</span></div>
+                    <p class="text-slate-500 mb-6 text-sm">Up to 6 family members with individual accounts.</p>
+                    <div class="card-cta-wrapper mt-auto">
+                        <a href="signup.html"
+                            class="btn-consistent border-2 border-slate-800 dark:border-slate-500 dark:text-slate-200 w-full">Join
+                            as Family</a>
+                    </div>
+                </div>
+
+                <!-- Student Plan -->
+                <div
+                    class="card-premium h-full flex flex-col border-2 border-transparent hover:border-zenGreen transition-all lg:col-start-2">
+                    <h3 class="text-xl font-bold dark:text-white mb-2">Student Plan</h3>
+                    <div class="text-4xl font-black mb-6 dark:text-white">$4.99 <span
+                            class="text-lg font-normal text-slate-500">/mo</span></div>
+                    <p class="text-slate-500 mb-6 text-sm">Full premium access for verified students.</p>
+                    <div class="card-cta-wrapper mt-auto">
+                        <a href="signup.html"
+                            class="btn-consistent border-2 border-slate-800 dark:border-slate-500 dark:text-slate-200 w-full">Verify
+                            Status</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Table Placeholder -->
+            <div class="max-w-4xl mx-auto mt-24 px-4 overflow-x-auto">
+                <h2 class="text-2xl font-bold mb-8 dark:text-white">Compare All Features</h2>
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b dark:border-slate-700">
+                            <th class="py-4 font-bold dark:text-white">Feature</th>
+                            <th class="py-4 font-bold text-center dark:text-white">Free</th>
+                            <th class="py-4 font-bold text-center dark:text-white">Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-b dark:border-slate-800">
+                            <td class="py-4 dark:text-slate-300">Basic Meditations</td>
+                            <td class="py-4 text-center">✅</td>
+                            <td class="py-4 text-center">✅</td>
+                        </tr>
+                        <tr class="border-b dark:border-slate-800">
+                            <td class="py-4 dark:text-slate-300">Sleep Stories</td>
+                            <td class="py-4 text-center">❌</td>
+                            <td class="py-4 text-center">✅</td>
+                        </tr>
+                        <tr class="border-b dark:border-slate-800">
+                            <td class="py-4 dark:text-slate-300">Offline Mode</td>
+                            <td class="py-4 text-center">❌</td>
+                            <td class="py-4 text-center">✅</td>
+                        </tr>
+                        <tr class="border-b dark:border-slate-800">
+                            <td class="py-4 dark:text-slate-300">Personalized Insights</td>
+                            <td class="py-4 text-center">❌</td>
+                            <td class="py-4 text-center">✅</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/components.js"></script>
+</body>
+
+</html>

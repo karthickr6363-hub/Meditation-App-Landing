@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Support | ZenMind Meditation App</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        zenGreen: '#2D5A27',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-softCream dark:bg-slate-900 transition-colors duration-200">
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative py-24 px-4 overflow-hidden h-[50vh] flex items-center">
+            <div class="absolute inset-0 z-0">
+                <img src="img/support-hero-bg.png" alt="Support workspace" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-white/70 dark:bg-slate-900/80 backdrop-blur-md"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto w-full text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">How Can We Help?</h1>
+                <p class="text-xl text-slate-700 dark:text-slate-300 max-w-2xl mx-auto font-medium">Our mindful support
+                    team is here for you 24/7.</p>
+            </div>
+        </section>
+
+        <!-- Support Channels -->
+        <section class="py-24 px-4 bg-white dark:bg-slate-900">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Help Center -->
+                <div class="card-premium flex flex-col items-center text-center group hover-lift">
+                    <div
+                        class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-blue-600 mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 dark:text-white">Help Center</h3>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow">Self-service articles and video guides
+                        to answer common questions.</p>
+                    <a href="#" class="text-zenGreen font-bold hover:underline">Browse Articles →</a>
+                </div>
+                <!-- Email Support -->
+                <div class="card-premium flex flex-col items-center text-center group hover-lift">
+                    <div
+                        class="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-2xl flex items-center justify-center text-zenGreen mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 dark:text-white">Email Us</h3>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow">Can't find what you need? Send us a
+                        message and we'll reply within 24 hours.</p>
+                    <a href="mailto:support@zenmind.app"
+                        class="text-zenGreen font-bold hover:underline">support@zenmind.app</a>
+                </div>
+                <!-- Live Chat -->
+                <div class="card-premium flex flex-col items-center text-center group hover-lift">
+                    <div
+                        class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-2xl flex items-center justify-center text-orange-600 mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 dark:text-white">Live Chat</h3>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow">Chat with a mindful guide in real-time
+                        for immediate assistance.</p>
+                    <button class="text-zenGreen font-bold hover:underline">Start Chat Now →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Form -->
+        <section class="py-24 px-4 bg-softCream dark:bg-slate-800">
+            <div class="max-w-3xl mx-auto card-premium bg-white dark:bg-slate-900 p-12">
+                <h2 class="text-3xl font-bold mb-8 text-center dark:text-white">Send Us Feedback</h2>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold mb-2 dark:text-slate-300">Name</label>
+                            <input type="text"
+                                class="w-full px-4 py-3 rounded-xl border focus:border-zenGreen outline-none dark:bg-slate-800 dark:text-white"
+                                placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2 dark:text-slate-300">Email</label>
+                            <input type="email"
+                                class="w-full px-4 py-3 rounded-xl border focus:border-zenGreen outline-none dark:bg-slate-800 dark:text-white"
+                                placeholder="john@example.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2 dark:text-slate-300">Issue Type</label>
+                        <select
+                            class="w-full px-4 py-3 rounded-xl border focus:border-zenGreen outline-none dark:bg-slate-800 dark:text-white">
+                            <option>Technical Support</option>
+                            <option>Subscription Query</option>
+                            <option>Program Suggestion</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2 dark:text-slate-300">Message</label>
+                        <textarea
+                            class="w-full px-4 py-3 rounded-xl border focus:border-zenGreen outline-none dark:bg-slate-800 dark:text-white h-32"
+                            placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="btn-consistent bg-zenGreen text-white w-full hover:bg-green-800 hover-lift text-lg font-bold">Submit
+                        Support Ticket</button>
+                </form>
+            </div>
+        </section>
+        <!-- Team Section (Requirement 44: Compact size) -->
+        <section class="py-24 px-4 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4 dark:text-white">Our Mindful Team</h2>
+                    <p class="text-slate-600 dark:text-slate-400 font-medium">Small team, big heart for wellness.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
+                    <!-- Member 1 -->
+                    <div
+                        class="p-4 rounded-xl border border-slate-100 dark:border-slate-800 text-center hover-lift bg-slate-50 dark:bg-slate-800/50">
+                        <div class="w-20 h-20 bg-slate-200 rounded-full mx-auto mb-4"></div>
+                        <h4 class="font-bold text-sm dark:text-white">Dr. Sarah K.</h4>
+                        <p class="text-xs text-zenGreen font-bold">Clinical Lead</p>
+                    </div>
+                    <!-- Member 2 -->
+                    <div
+                        class="p-4 rounded-xl border border-slate-100 dark:border-slate-800 text-center hover-lift bg-slate-50 dark:bg-slate-800/50">
+                        <div class="w-20 h-20 bg-slate-200 rounded-full mx-auto mb-4"></div>
+                        <h4 class="font-bold text-sm dark:text-white">Marcus T.</h4>
+                        <p class="text-xs text-zenGreen font-bold">UX Designer</p>
+                    </div>
+                    <!-- Member 3 -->
+                    <div
+                        class="p-4 rounded-xl border border-slate-100 dark:border-slate-800 text-center hover-lift bg-slate-50 dark:bg-slate-800/50">
+                        <div class="w-20 h-20 bg-slate-200 rounded-full mx-auto mb-4"></div>
+                        <h4 class="font-bold text-sm dark:text-white">Alex Wong</h4>
+                        <p class="text-xs text-zenGreen font-bold">Engineer</p>
+                    </div>
+                    <!-- Member 4 -->
+                    <div
+                        class="p-4 rounded-xl border border-slate-100 dark:border-slate-800 text-center hover-lift bg-slate-50 dark:bg-slate-800/50">
+                        <div class="w-20 h-20 bg-slate-200 rounded-full mx-auto mb-4"></div>
+                        <h4 class="font-bold text-sm dark:text-white">Elena S.</h4>
+                        <p class="text-xs text-zenGreen font-bold">Community</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/components.js"></script>
+</body>
+
+</html>

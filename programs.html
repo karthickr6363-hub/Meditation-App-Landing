@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | ZenMind Meditation App</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        zenGreen: '#2D5A27',
+                        skyBlue: '#A5C9CA',
+                        softCream: '#F9F5EB',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-softCream dark:bg-slate-900 transition-colors duration-200">
+
+    <main>
+        <!-- Programs Hero -->
+        <section class="relative py-24 bg-zenGreen/10 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="img/programs-hero-bg.png" alt="Zen Garden" class="w-full h-full object-cover opacity-30">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-softCream dark:to-slate-900"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">Explore Our Programs</h1>
+                <p class="text-xl text-slate-700 dark:text-slate-300 max-w-2xl mx-auto font-medium">Curated journeys
+                    designed for every stage of your mindfulness path.</p>
+            </div>
+        </section>
+
+        <!-- Programs Grid -->
+        <section class="py-24 px-4 bg-white dark:bg-slate-900">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Program 1 -->
+                    <div class="card-premium h-full flex flex-col group overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250.png?text=Stress+Relief"
+                            class="w-full h-48 object-cover rounded-t-xl -mt-6 -mx-6 mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <h3 class="text-2xl font-bold mb-3 dark:text-white">Stress & Anxiety Relief</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow font-medium leading-relaxed">
+                            Targeted meditations to help you manage daily stressors and find calm in the chaos.
+                        </p>
+                        <div class="card-cta-wrapper pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <a href="signup.html" class="btn-consistent bg-zenGreen text-white w-full">Start Program</a>
+                        </div>
+                    </div>
+
+                    <!-- Program 2 -->
+                    <div class="card-premium h-full flex flex-col group overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250.png?text=Better+Sleep"
+                            class="w-full h-48 object-cover rounded-t-xl -mt-6 -mx-6 mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <h3 class="text-2xl font-bold mb-3 dark:text-white">Better Sleep Journey</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow font-medium leading-relaxed">
+                            A 14-day sequence designed to reset your sleep cycle and reduce nighttime overthinking.
+                        </p>
+                        <div class="card-cta-wrapper pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <a href="signup.html" class="btn-consistent bg-zenGreen text-white w-full">Start Program</a>
+                        </div>
+                    </div>
+
+                    <!-- Program 3 -->
+                    <div class="card-premium h-full flex flex-col group overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250.png?text=Focus"
+                            class="w-full h-48 object-cover rounded-t-xl -mt-6 -mx-6 mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <h3 class="text-2xl font-bold mb-3 dark:text-white">Focus & Productivity</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow font-medium leading-relaxed">
+                            Enhance your cognitive performance and flow state with these deep-work meditations.
+                        </p>
+                        <div class="card-cta-wrapper pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <a href="signup.html" class="btn-consistent bg-zenGreen text-white w-full">Start Program</a>
+                        </div>
+                    </div>
+
+                    <!-- Program 4 -->
+                    <div class="card-premium h-full flex flex-col group overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250.png?text=Beginner"
+                            class="w-full h-48 object-cover rounded-t-xl -mt-6 -mx-6 mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <h3 class="text-2xl font-bold mb-3 dark:text-white">Beginner Meditation</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow font-medium leading-relaxed">
+                            The perfect starting point. Learn the fundamentals of mindfulness in just 10 days.
+                        </p>
+                        <div class="card-cta-wrapper pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <a href="signup.html" class="btn-consistent bg-zenGreen text-white w-full">Start Program</a>
+                        </div>
+                    </div>
+
+                    <!-- Program 5 -->
+                    <div class="card-premium h-full flex flex-col group overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250.png?text=Kids"
+                            class="w-full h-48 object-cover rounded-t-xl -mt-6 -mx-6 mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <h3 class="text-2xl font-bold mb-3 dark:text-white">Zen Kids</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow font-medium leading-relaxed">
+                            Short, engaging exercises to help children develop emotional awareness and focus.
+                        </p>
+                        <div class="card-cta-wrapper pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <a href="signup.html" class="btn-consistent bg-zenGreen text-white w-full">Start Program</a>
+                        </div>
+                    </div>
+
+                    <!-- Program 6 -->
+                    <div class="card-premium h-full flex flex-col group overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250.png?text=Corporate"
+                            class="w-full h-48 object-cover rounded-t-xl -mt-6 -mx-6 mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <h3 class="text-2xl font-bold mb-3 dark:text-white">Corporate Wellness</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow font-medium leading-relaxed">
+                            Mindfulness training for teams. Improve morale, focus, and collaboration at work.
+                        </p>
+                        <div class="card-cta-wrapper pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <a href="signup.html" class="btn-consistent bg-zenGreen text-white w-full">Start Program</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/components.js"></script>
+</body>
+
+</html>

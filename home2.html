@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenMind | Start Your Transformation</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        zenGreen: '#2D5A27',
+                        skyBlue: '#A5C9CA',
+                        softCream: '#F9F5EB',
+                    },
+                    animation: {
+                        'slow-zoom': 'zoom 20s infinite alternate',
+                    },
+                    keyframes: {
+                        zoom: {
+                            '0%': { transform: 'scale(1)' },
+                            '100%': { transform: 'scale(1.1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="bg-softCream dark:bg-slate-900 transition-colors duration-200">
+
+    <main>
+        <!-- Animated Hero Section -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <img src="img/home2-hero-bg.png" alt="Night landscape"
+                    class="w-full h-full object-cover animate-slow-zoom">
+                <div class="absolute inset-0 bg-black/40"></div>
+            </div>
+
+            <div class="relative z-10 max-w-4xl px-4 text-center animate__animated animate__fadeInDown">
+                <h1 class="text-4xl md:text-7xl font-bold text-white mb-6">Master Your Mind</h1>
+                <p class="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto font-light">
+                    Transform your life with a 7-day guided mindfulness experience.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-6">
+                    <a href="signup.html"
+                        class="btn-consistent bg-white text-slate-900 px-10 py-4 rounded-full hover:bg-green-50 hover-lift hover-glow text-xl">
+                        Start Free 7-Day Trial
+                    </a>
+                    <div class="flex items-center gap-4 justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                            alt="App Store" class="h-12 hover-lift cursor-pointer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            alt="Google Play" class="h-12 hover-lift cursor-pointer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 14l-7 7-7-7m14-8l-7 7-7-7"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Feature Timeline -->
+        <section class="py-24 px-4 bg-white dark:bg-slate-800">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-20">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4 dark:text-white">A Day with ZenMind</h2>
+                    <p class="text-slate-700 dark:text-slate-300 font-medium">Mindfulness integrated into every moment
+                        of your day.</p>
+                </div>
+
+                <div class="relative space-y-12">
+                    <!-- Vertical Line -->
+                    <div
+                        class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-1 bg-green-100 dark:bg-slate-700 hidden md:block">
+                    </div>
+
+                    <!-- Morning -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+                        <div class="md:w-1/2 md:pr-12 md:text-right">
+                            <h3 class="text-2xl font-bold text-zenGreen mb-2">Morning Bloom</h3>
+                            <p class="text-slate-600 dark:text-slate-400 font-medium">Start your day with a 5-minute
+                                intention setting session to ground your energy.</p>
+                        </div>
+                        <div
+                            class="relative z-10 w-12 h-12 bg-zenGreen rounded-full flex items-center justify-center text-white font-bold shadow-lg">
+                            1</div>
+                        <div class="md:w-1/2 md:pl-12">
+                            <img src="https://via.placeholder.com/300x200.png?text=Morning+Routine"
+                                class="rounded-2xl shadow-lg w-full max-w-sm">
+                        </div>
+                    </div>
+
+                    <!-- Work -->
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-0">
+                        <div class="md:w-1/2 md:pl-12">
+                            <h3 class="text-2xl font-bold text-zenGreen mb-2">Focus Flow</h3>
+                            <p class="text-slate-600 dark:text-slate-400 font-medium">Quick 2-minute breathing breaks
+                                during work hours to reduce stress and boost clarity.</p>
+                        </div>
+                        <div
+                            class="relative z-10 w-12 h-12 bg-zenGreen rounded-full flex items-center justify-center text-white font-bold shadow-lg">
+                            2</div>
+                        <div class="md:w-1/2 md:pr-12 md:text-right">
+                            <img src="https://via.placeholder.com/300x200.png?text=Work+Focus"
+                                class="rounded-2xl shadow-lg w-full max-w-sm ml-auto">
+                        </div>
+                    </div>
+
+                    <!-- Night -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+                        <div class="md:w-1/2 md:pr-12 md:text-right">
+                            <h3 class="text-2xl font-bold text-zenGreen mb-2">Restful Night</h3>
+                            <p class="text-slate-600 dark:text-slate-400 font-medium">Unwind with immersive sleep
+                                stories that transport your mind to peaceful landscapes.</p>
+                        </div>
+                        <div
+                            class="relative z-10 w-12 h-12 bg-zenGreen rounded-full flex items-center justify-center text-white font-bold shadow-lg">
+                            3</div>
+                        <div class="md:w-1/2 md:pl-12">
+                            <img src="https://via.placeholder.com/300x200.png?text=Sleep+Stories"
+                                class="rounded-2xl shadow-lg w-full max-w-sm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Slider (Requirement 37 & 25) -->
+        <section class="py-24 px-4 bg-slate-50 dark:bg-slate-900">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4 dark:text-white">What Our Community Says</h2>
+                    <p class="text-slate-700 dark:text-slate-300 font-medium">Join 10 million people finding their
+                        peace.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <!-- Review 1 -->
+                    <div class="card-premium h-full flex flex-col">
+                        <div class="flex text-yellow-500 mb-4">★★★★★</div>
+                        <p class="text-slate-600 dark:text-slate-400 italic mb-6 flex-grow font-medium">"This app
+                            changed my morning routine. I feel so much more grounded throughout the day."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-slate-200 rounded-full"></div>
+                            <div>
+                                <p class="font-bold text-sm dark:text-white">Sarah Jenkins</p>
+                                <p class="text-xs text-slate-500">Yoga Instructor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="card-premium h-full flex flex-col">
+                        <div class="flex text-yellow-500 mb-4">★★★★★</div>
+                        <p class="text-slate-600 dark:text-slate-400 italic mb-6 flex-grow font-medium">"The sleep
+                            stories are magic. I haven't slept this well in years. Highly recommend!"</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-slate-200 rounded-full"></div>
+                            <div>
+                                <p class="font-bold text-sm dark:text-white">Marcus Chen</p>
+                                <p class="text-xs text-slate-500">Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="card-premium h-full flex flex-col">
+                        <div class="flex text-yellow-500 mb-4">★★★★★</div>
+                        <p class="text-slate-600 dark:text-slate-400 italic mb-6 flex-grow font-medium">"ZenMind is the
+                            most intuitive meditation app I've used. Simple, beautiful, and effective."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-slate-200 rounded-full"></div>
+                            <div>
+                                <p class="font-bold text-sm dark:text-white">Elena Rodriguez</p>
+                                <p class="text-xs text-slate-500">Digital Nomad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 4 -->
+                    <div class="card-premium h-full flex flex-col">
+                        <div class="flex text-yellow-500 mb-4">★★★★★</div>
+                        <p class="text-slate-600 dark:text-slate-400 italic mb-6 flex-grow font-medium">"A must-have app
+                            for anyone dealing with high-stress environments. Life-saving tool."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-slate-200 rounded-full"></div>
+                            <div>
+                                <p class="font-bold text-sm dark:text-white">David Miller</p>
+                                <p class="text-xs text-slate-500">ER Nurse</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <a href="testimonials.html"
+                        class="btn-consistent border-2 border-zenGreen text-zenGreen dark:text-green-400 dark:border-green-400 px-8 py-2 rounded-full hover:bg-zenGreen hover:text-white transition-all font-bold">
+                        Read More Reviews
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="py-24 px-4 bg-white dark:bg-slate-800">
+            <div class="max-w-4xl mx-auto card-premium bg-green-50 dark:bg-slate-700/50 border-none p-12 text-center">
+                <h2 class="text-3xl font-bold mb-4 dark:text-white">Join the Mindful Minute</h2>
+                <p class="text-slate-600 dark:text-slate-300 mb-8 font-medium">Subscribe for weekly mindfulness tips,
+                    breathing guides, and early access to new programs.</p>
+                <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+                    <input type="email" placeholder="Your email address"
+                        class="flex-grow px-6 py-4 rounded-full border-2 border-transparent focus:border-zenGreen outline-none dark:bg-slate-800 dark:text-white"
+                        required>
+                    <button type="submit"
+                        class="btn-consistent bg-zenGreen text-white px-8 rounded-full hover:bg-green-800 hover-lift shadow-lg">
+                        Sign Up
+                    </button>
+                </form>
+                <p class="text-xs text-slate-400 mt-6 italic">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/components.js"></script>
+</body>
+
+</html>
