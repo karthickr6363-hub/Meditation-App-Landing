@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isDashboard) {
             injectFooter();
         }
+        injectScrollTop();
     }
 
     // Set active link
@@ -48,23 +49,23 @@ function injectHeader() {
 
             <!-- Desktop Nav Links -->
             <div class="hidden lg:flex items-center gap-8">
-                <a href="index.html" class="nav-link font-medium hover:text-green-600 transition-colors">Home</a>
-                <a href="home2.html" class="nav-link font-medium hover:text-green-600 transition-colors">Home 2</a>
-                <a href="features.html" class="nav-link font-medium hover:text-green-600 transition-colors">Features</a>
-                <a href="programs.html" class="nav-link font-medium hover:text-green-600 transition-colors">Programs</a>
-                <a href="pricing.html" class="nav-link font-medium hover:text-green-600 transition-colors">Pricing</a>
-                <a href="resources.html" class="nav-link font-medium hover:text-green-600 transition-colors">Resources</a>
-                <a href="download.html" class="nav-link font-medium hover:text-green-600 transition-colors">Download</a>
-                <a href="contact.html" class="nav-link font-medium hover:text-green-600 transition-colors">Support</a>
+                <a href="index.html" class="nav-link font-medium text-slate-700 dark:text-slate-200 hover:text-green-600 transition-colors">Home</a>
+                <a href="home2.html" class="nav-link font-medium text-slate-700 dark:text-slate-200 hover:text-green-600 transition-colors">Home 2</a>
+                <a href="features.html" class="nav-link font-medium text-slate-700 dark:text-slate-200 hover:text-green-600 transition-colors">Features</a>
+                <a href="programs.html" class="nav-link font-medium text-slate-700 dark:text-slate-200 hover:text-green-600 transition-colors">Programs</a>
+                <a href="pricing.html" class="nav-link font-medium text-slate-700 dark:text-slate-200 hover:text-green-600 transition-colors">Pricing</a>
+                <a href="resources.html" class="nav-link font-medium text-slate-700 dark:text-slate-200 hover:text-green-600 transition-colors">Resources</a>
+                <a href="download.html" class="nav-link font-medium text-slate-700 dark:text-slate-200 hover:text-green-600 transition-colors">Download</a>
+                <a href="contact.html" class="nav-link font-medium text-slate-700 dark:text-slate-200 hover:text-green-600 transition-colors">Support</a>
             </div>
 
             <!-- Actions -->
             <div class="hidden lg:flex items-center gap-4">
-                <button onclick="toggleTheme()" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">
+                <button onclick="toggleTheme()" class="p-2 rounded-full text-slate-700 dark:text-slate-200 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">
                     <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
                     <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M16.242 16.242l.707.707M7.657 7.657l.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                 </button>
-                <a href="login.html" class="font-medium hover:text-green-600 transition-colors">Sign In</a>
+                <a href="login.html" class="font-medium text-slate-700 dark:text-slate-200 hover:text-green-600 transition-colors">Sign In</a>
                 <a href="signup.html" class="btn-consistent bg-green-600 text-white hover:bg-green-700 hover-lift hover-glow">Get Started</a>
             </div>
 
@@ -79,7 +80,10 @@ function injectHeader() {
             <div class="absolute inset-0 bg-black bg-opacity-50" id="drawer-overlay"></div>
             <div class="absolute top-0 left-0 bottom-0 w-64 bg-white dark:bg-slate-900 shadow-xl p-6 overflow-y-auto">
                 <div class="flex items-center justify-between mb-8">
-                    <a href="index.html" class="brand-name brand-font text-green-800 dark:text-green-400">ZenMind</a>
+                     <a href="index.html" class="flex items-center gap-2 group">
+                        <div class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">M</div>
+                        <span class="brand-name brand-font text-green-800 dark:text-green-400">ZenMind</span>
+                    </a>
                     <button id="close-drawer" class="p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
                 </div>
                 <div class="flex flex-col gap-4">
@@ -91,6 +95,15 @@ function injectHeader() {
                     <a href="resources.html" class="nav-link-mobile">Resources</a>
                     <a href="download.html" class="nav-link-mobile">Download</a>
                     <a href="contact.html" class="nav-link-mobile">Support</a>
+                    
+                    <!-- Dark Mode Toggle Mobile -->
+                    <button onclick="toggleTheme()" class="flex items-center gap-3 nav-link-mobile text-left w-full">
+                        <span class="dark:hidden">Dark Mode</span>
+                        <span class="hidden dark:block">Light Mode</span>
+                        <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M16.242 16.242l.707.707M7.657 7.657l.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </button>
+
                     <hr class="my-2 border-gray-100 dark:border-slate-800">
                     <a href="login.html" class="nav-link-mobile">Sign In</a>
                     <a href="signup.html" class="btn-consistent bg-green-600 text-white w-full">Sign Up</a>
@@ -117,7 +130,7 @@ function injectHeader() {
 
 function injectFooter() {
     const footerHTML = `
-    <footer class="bg-slate-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8 mt-20">
+    <footer class="bg-slate-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8 mt-05">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             <!-- Brand -->
             <div class="space-y-4">
@@ -187,5 +200,41 @@ function highlightActiveLink() {
         if (link.getAttribute('href') === currentPath) {
             link.classList.add('text-green-600', 'font-bold', 'bg-green-50', 'dark:bg-slate-800', 'px-3', 'py-2', 'rounded-lg');
         }
+    });
+}
+
+function injectScrollTop() {
+    const scrollBtnHTML = `
+    <button id="scroll-top-btn" class="fixed bottom-8 right-8 z-50 bg-green-600 text-white p-3 rounded-full shadow-lg opacity-0 translate-y-10 transition-all duration-300 hover:bg-green-700 hover:scale-110 focus:outline-none hidden" title="Scroll to Top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+    `;
+    document.body.insertAdjacentHTML('beforeend', scrollBtnHTML);
+
+    const scrollBtn = document.getElementById('scroll-top-btn');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollBtn.classList.remove('hidden');
+            setTimeout(() => {
+                scrollBtn.classList.remove('opacity-0', 'translate-y-10');
+            }, 10);
+        } else {
+            scrollBtn.classList.add('opacity-0', 'translate-y-10');
+            setTimeout(() => {
+                if (window.scrollY <= 300) {
+                    scrollBtn.classList.add('hidden');
+                }
+            }, 300);
+        }
+    });
+
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 }
