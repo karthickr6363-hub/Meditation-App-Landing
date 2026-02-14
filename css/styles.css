@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
 
 :root {
-    --brand-primary: #2D5A27; /* Zen Green */
-    --brand-secondary: #A5C9CA; /* Sky Blue */
-    --brand-accent: #E7AB79; /* Soft Peach/Orange */
-    --bg-light: #F9F5EB; /* Soft Cream */
-    --bg-dark: #1E293B; /* Deep Charcoal */
+    --brand-primary: #2D5A27;
+    /* Zen Green */
+    --brand-secondary: #A5C9CA;
+    /* Sky Blue */
+    --brand-accent: #E7AB79;
+    /* Soft Peach/Orange */
+    --bg-light: #F9F5EB;
+    /* Soft Cream */
+    --bg-dark: #1E293B;
+    /* Deep Charcoal */
     --card-light: #FFFFFF;
     --card-dark: #334155;
     --text-primary-light: #1E293B;
     --text-secondary-light: #64748B;
     --text-primary-dark: #F8FAFC;
     --text-secondary-dark: #CBD5E1;
-    
+
     /* Consistency tokens */
     --nav-height-desktop: 80px;
     --nav-height-mobile: 64px;
@@ -35,9 +40,20 @@ html.light {
 body {
     font-family: 'Inter', sans-serif;
     transition: background-color var(--transition-fast), color var(--transition-fast);
+    overflow-x: hidden;
+    width: 100%;
 }
 
-h1, h2, h3, h4, .brand-font {
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+.brand-font {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
 }
@@ -79,6 +95,7 @@ h1, h2, h3, h4, .brand-font {
 .hover-lift {
     transition: transform var(--transition-fast);
 }
+
 .hover-lift:hover {
     transform: translateY(-4px);
 }
@@ -93,8 +110,8 @@ h1, h2, h3, h4, .brand-font {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 50;
-    background: inherit;
+    z-index: 40;
+    /* background: inherit; Removed to allow utility classes to work */
 }
 
 /* Requirement: Center H1 and spacing */
